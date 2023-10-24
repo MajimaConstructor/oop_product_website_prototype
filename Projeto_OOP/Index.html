@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/media/By9N5jlCcAAFRo5.jpg">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body class="body_html">
+    <header class="menucaixa">
+        MINHA LOJA 1.0
+    </header>
+    <div class="comum">Cadastre Seus Produtos Aqui!!!</div>
+    <main>
+        <div class="card">
+            <div>
+                <label for="nomeProd">NOME DO PRODUTO</label><br>
+                <input type="text" id="nomeProd">
+            </div>
+
+            <div>
+                <label for="valorProd">VALOR DO PRODUTO</label><br>
+                <input type="text" id="valorProd" name="valorProd">
+            </div><br>
+
+            <button id="btn" onclick="produto.salvar()">SALVAR</button>
+            <button onclick="produto.cancelar()">CANCELAR</button>
+        </div>
+        <div>
+            <table border="1" id="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Produtos</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
